@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планувальник Подорожей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Планувальник Подорожей</h1>
+        <nav>
+            <ul>
+                <li><a href="#my-trips">Мої подорожі</a></li>
+                <li><a href="#places-to-visit">Місця для відвідування</a></li>
+                <li><a href="#budget">Бюджет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="my-trips">
+            <h2>Мої подорожі</h2>
+            <div class="trip-list-container">
+                <div class="trip">
+                    <h3>Париж, Франція</h3>
+                    <p>Дати: 10.05.2023 - 17.05.2023 (Завершено)</p>
+                    <img src="assets/Paris.png" width="300px" height="220px" alt="Фото Парижа">
+                </div>
+                <div class="trip">
+                    <h3>Київ, Україна</h3>
+                    <p>Дати: 20.06.2024 - 25.06.2024 (Заплановано)</p>
+                    <img src="assets/Kyiv.png" width="320px" height="240px" alt="Фото Києва">
+                </div>
+            </div>
+        </section>
+
+        <section id="places-to-visit">
+            <h2>Місця для відвідування</h2>
+            <div class="places-container">
+                <div class="place-card">
+                    <img src="assets/Rome.png" alt="Фото Риму">
+                    <h3>Рим, Італія</h3>
+                    <p>Вічне місто з багатою історією.</p>
+                    <p>Ціна: від $1000</p>
+                    <p>Відгуки: ★★★★★</p>
+                </div>
+                <div class="place-card">
+                    <img src="assets/Tokyo.png"  alt="Фото Токіо">
+                    <h3>Токіо, Японія</h3>
+                    <p>Мегаполіс, де традиції зустрічаються з майбутнім.</p>
+                    <p>Ціна: від $2500</p>
+                    <p>Відгуки: ★★★★★</p>
+                </div>
+                <div class="place-card">
+                    <img src="assets/NewYork.png" alt="Фото Нью-Йорка">
+                    <h3>Нью-Йорк, США</h3>
+                    <p>Місто, яке ніколи не спить.</p>
+                    <p>Ціна: від $2000</p>
+                    <p>Відгуки: ★★★★☆</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="budget">
+            <h2>Бюджет</h2>
+            <form class="budget-form">
+                <label for="destination">Напрямок:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <label for="transport">Транспорт ($):</label>
+                <input type="number" id="transport" name="transport" required>
+
+                <label for="accommodation">Проживання ($):</label>
+                <input type="number" id="accommodation" name="accommodation" required>
+
+                <label for="food">Харчування ($):</label>
+                <input type="number" id="food" name="food" required>
+
+                <label for="activities">Розваги ($):</label>
+                <input type="number" id="activities" name="activities" required>
+
+                <button type="submit">Створити план</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Планувальник Подорожей</p>
+    </footer>
+</body>
+</html>
