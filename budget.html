@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бюджет - Планувальник Подорожей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Планувальник Подорожей</a></h1>
+        <nav>
+            <ul>
+                <li><a href="my-trips.html">Мої подорожі</a></li>
+                <li><a href="places-to-visit.html">Місця для відвідування</a></li>
+                <li><a href="budget.html" class="active">Бюджет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="budget">
+            <h2>Створіть бюджет подорожі</h2>
+            <form class="budget-form">
+                <div class="form-group">
+                    <label for="destination">Напрямок:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Наприклад, Париж" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="transport">Транспорт ($):</label>
+                    <input type="number" id="transport" name="transport" placeholder="500" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="accommodation">Проживання ($):</label>
+                    <input type="number" id="accommodation" name="accommodation" placeholder="800" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="food">Харчування ($):</label>
+                    <input type="number" id="food" name="food" placeholder="400" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="activities">Розваги ($):</label>
+                    <input type="number"id="activities" name="activities" placeholder="300" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes">Додаткові нотатки:</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Наприклад, сувеніри, візи..."></textarea>
+                </div>
+
+                <button type="submit">Розрахувати бюджет</button>
+            </form>
+            
+            <div class="budget-summary">
+                <h3>Загальний бюджет:</h3>
+                <p id="total-budget">$0</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Планувальник Подорожей</p>
+    </footer>
+    
+    <script>
+        const budgetForm = document.querySelector('.budget-form');
+        const totalBudgetElement = document.getElementById('total-budget');
+
+        budgetForm.addEventListener('input', () => {
+            const transport = parseFloat(document.getElementById('transport').value) || 0;
+            const accommodation = parseFloat(document.getElementById('accommodation').value) || 0;
+            const food = parseFloat(document.getElementById('food').value) || 0;
+            const activities = parseFloat(document.getElementById('activities').value) || 0;
+
+            const total = transport + accommodation + food + activities;
+            totalBudgetElement.textContent = `$${total}`;
+        });
+    </script>
+</body>
+</html>

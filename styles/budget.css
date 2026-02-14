@@ -1,0 +1,55 @@
+/* Budget Page */
+.budget-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.budget-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.budget-form input, .budget-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.budget-form button {
+    width: 100%;
+    background: #28a745;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+.budget-form button:hover {
+    background: #218838;
+}
+
+.budget-summary {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#total-budget {
+    font-weight: 700;
+    color: #2c3e50;
+}
