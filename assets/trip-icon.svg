@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="tripTitle tripDesc">
+  <title id="tripTitle">Іконка подорожей</title>
+  <desc id="tripDesc">Стилізована валіза для розділу подорожей.</desc>
+  <defs>
+    <linearGradient id="tripGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b8dff"/>
+      <stop offset="100%" stop-color="#0b5ec4"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="24" width="60" height="50" rx="10" fill="url(#tripGradient)"/>
+  <rect x="34" y="16" width="28" height="12" rx="6" fill="#d6e8ff"/>
+  <rect x="26" y="42" width="44" height="6" rx="3" fill="#d6e8ff"/>
+  <rect x="42" y="48" width="12" height="18" rx="4" fill="#d6e8ff"/>
+</svg>
