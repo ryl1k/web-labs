@@ -29,22 +29,22 @@
 
                 <div class="form-group">
                     <label for="transport">Транспорт ($):</label>
-                    <input type="number" id="transport" name="transport" placeholder="500" required>
+                    <input type="number" id="transport" name="transport" min="0" placeholder="500" required>
                 </div>
 
                 <div class="form-group">
                     <label for="accommodation">Проживання ($):</label>
-                    <input type="number" id="accommodation" name="accommodation" placeholder="800" required>
+                    <input type="number" id="accommodation" name="accommodation" min="0" placeholder="800" required>
                 </div>
 
                 <div class="form-group">
                     <label for="food">Харчування ($):</label>
-                    <input type="number" id="food" name="food" placeholder="400" required>
+                    <input type="number" id="food" name="food" min="0" placeholder="400" required>
                 </div>
 
                 <div class="form-group">
                     <label for="activities">Розваги ($):</label>
-                    <input type="number"id="activities" name="activities" placeholder="300" required>
+                    <input type="number" id="activities" name="activities" min="0" placeholder="300" required>
                 </div>
                 
                 <div class="form-group">
@@ -52,12 +52,13 @@
                     <textarea id="notes" name="notes" rows="4" placeholder="Наприклад, сувеніри, візи..."></textarea>
                 </div>
 
-                <button type="submit">Розрахувати бюджет</button>
+                <button type="button">Порахувати вручну</button>
             </form>
             
             <div class="budget-summary">
-                <h3>Загальний бюджет:</h3>
+                <h3>Орієнтовний бюджет:</h3>
                 <p id="total-budget">$0</p>
+                <p class="summary-note">Додайте значення полів і підсумуйте їх вручну: транспорт + проживання + харчування + розваги.</p>
             </div>
         </section>
     </main>
@@ -65,20 +66,5 @@
     <footer>
         <p>&copy; 2026 Планувальник Подорожей</p>
     </footer>
-    
-    <script>
-        const budgetForm = document.querySelector('.budget-form');
-        const totalBudgetElement = document.getElementById('total-budget');
-
-        budgetForm.addEventListener('input', () => {
-            const transport = parseFloat(document.getElementById('transport').value) || 0;
-            const accommodation = parseFloat(document.getElementById('accommodation').value) || 0;
-            const food = parseFloat(document.getElementById('food').value) || 0;
-            const activities = parseFloat(document.getElementById('activities').value) || 0;
-
-            const total = transport + accommodation + food + activities;
-            totalBudgetElement.textContent = `$${total}`;
-        });
-    </script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="budgetTitle budgetDesc">
+  <title id="budgetTitle">Іконка бюджету</title>
+  <desc id="budgetDesc">Стилізований гаманець для розділу бюджету.</desc>
+  <defs>
+    <linearGradient id="budgetGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#f08c00"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="24" width="68" height="48" rx="10" fill="url(#budgetGradient)"/>
+  <rect x="22" y="34" width="52" height="28" rx="8" fill="#ffe3b8"/>
+  <rect x="55" y="41" width="23" height="14" rx="7" fill="#d97706"/>
+  <circle cx="62" cy="48" r="3" fill="#fff2da"/>
+  <path d="M28 30h18c4 0 8-3.2 8-7.2V20h-8v2.3c0 .9-.8 1.7-1.7 1.7H28V30z" fill="#ffe3b8"/>
+</svg>

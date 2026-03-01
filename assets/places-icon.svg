@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="placesTitle placesDesc">
+  <title id="placesTitle">Іконка карти</title>
+  <desc id="placesDesc">Стилізований пін на мапі для розділу місць.</desc>
+  <defs>
+    <linearGradient id="placesGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#36bf7f"/>
+      <stop offset="100%" stop-color="#15905b"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 28c0-5.5 4.5-10 10-10h44c5.5 0 10 4.5 10 10v40c0 5.5-4.5 10-10 10H26c-5.5 0-10-4.5-10-10V28z" fill="#dff8ed"/>
+  <path d="M28 24v48M48 24v48M68 24v48M20 40h56M20 56h56" stroke="#95d8b7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 26c-9.4 0-17 7.6-17 17 0 10.9 14.4 26 16.1 27.8.5.5 1.3.5 1.8 0C50.6 69 65 53.9 65 43c0-9.4-7.6-17-17-17z" fill="url(#placesGradient)"/>
+  <circle cx="48" cy="43" r="6.5" fill="#ecfff5"/>
+</svg>
