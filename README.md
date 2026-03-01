@@ -10,7 +10,7 @@
 
 - Основна гілка задеплоєна на Верселі:
 
-[Vercel](https://web-labs-aqagx29kh-ryl1ks-projects.vercel.app/)
+[Vercel](https://web-labs-sigma.vercel.app/)
 
 - Стейдж/тестування на github pages:
 
