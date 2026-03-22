@@ -1,69 +1,81 @@
-/* Hero Section */
 .hero {
-    background: linear-gradient(rgba(7, 33, 67, 0.75), rgba(13, 81, 148, 0.55)), url('../assets/Paris.png') no-repeat center center/cover;
+    background:
+        linear-gradient(120deg, rgba(7, 33, 67, 0.78), rgba(13, 81, 148, 0.55)),
+        url('../assets/Paris.png') center/cover no-repeat;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
-    border-radius: 12px;
+    padding: clamp(56px, 9vw, 110px) clamp(20px, 4vw, 48px);
+    border-radius: 16px;
 }
 
 .hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    margin: 0 0 16px;
     color: #fff;
+    font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin: 0 auto 28px;
+    max-width: 680px;
+    font-size: clamp(1rem, 2.4vw, 1.2rem);
 }
 
 .cta-button {
-    background: #007bff;
+    display: inline-block;
+    background: var(--primary);
     color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 1.1rem;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-size: 1rem;
     font-weight: 700;
-    transition: background 0.3s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    background: var(--primary-hover);
     text-decoration: none;
+    transform: translateY(-1px);
 }
 
-/* Features Section */
 .features h2 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .feature-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
 
 .feature {
-    flex: 1;
-    padding: 20px;
+    padding: 24px 20px;
+    border-radius: 14px;
+    background: #f8fbff;
+    border: 1px solid #e7eef9;
+    text-align: center;
 }
 
 .feature img {
-    margin-bottom: 20px;
-    border-radius: 50%;
-    background: #eef;
-    padding: 15px;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 16px;
+    border-radius: 18px;
+    background: #ebf3ff;
+    padding: 14px;
+    object-fit: contain;
 }
 
 .feature h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.35rem;
+    margin: 0 0 10px;
+}
+
+.feature p {
+    margin: 0;
 }
 
 .feature-link {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 16px;
     font-weight: 700;
 }

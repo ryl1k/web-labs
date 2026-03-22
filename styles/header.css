@@ -1,45 +1,52 @@
-/* Header */
 header {
-    background: #ffffff;
-    color: #333;
-    padding: 1rem 2rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative; /* Changed from sticky to fixed */
+    position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 2000;
-    transition: top 0.3s; /* Add transition for smooth hiding */
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 16px clamp(16px, 3vw, 40px);
 }
 
-header.hidden {
-    top: -200px; /* Hide header when scrolled down */
+header h1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
 }
 
 header h1 a {
-    margin: 0;
-    font-size: 1.8rem;
-    color: #2c3e50;
+    font-size: clamp(1.25rem, 2.8vw, 1.8rem);
+    color: #1c2d3f;
     font-weight: 700;
 }
 
+nav {
+    margin-top: 12px;
+}
+
 nav ul {
+    margin: 0;
     padding: 0;
     list-style: none;
-    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav a {
-    color: #555;
+    color: #495766;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
-nav a:hover, nav a.active {
-    color: #007bff;
+nav a:hover,
+nav a.active {
+    color: var(--primary);
+    text-decoration: none;
 }
